@@ -17,84 +17,107 @@
       display: none;
     }
   }
-
-  *{
-    background-color: black;
-    color: white;
+  #logo{
+    max-width: 220px;
   }
-/*
-  nav  .logo h1{
-    max-height: 200px;
-    font-family: "IBM Plex Sans Condensed", serif;
+  body, html{
+    height: 100%;
+  }
+  .background-image {
+      background-image: url('andy-li-RndRFJ1v1kk-unsplash.jpg'); /* Replace with your image */
+      background-size: cover;
+      background-position: center;
+      height: 100vh; /* Full height */
+      position: fixed; /* Position context for navbar */
+  }
+  .background-image nav{
+    background-image: linear-gradient(to right,
+    rgba(0,0,0,1),
+    rgba(0,0,0,.7),
+    rgba(0,0,0,.4),
+    rgba(0,0,0,0));
+    height: 100vh;
+    right: 0;
+  }
+  nav {
+    padding: 15px;
     display: flex;
     justify-content: space-evenly;
-    width: 100vw;
-    margin: 0;
+    margin-top: 0;
+    width: 100vw;/*
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.7),  /* Color with opacity 
+        rgba(0, 0, 0, 0.7) */
+
   }
 
-  .logo{
+  nav ul{
+    list-style: none;
     display: flex;
-    top: 0;
-    left: 0;
-    width: 200px;
-    overflow: hidden;
-    margin-top: 30px;
-    margin-left: 30px;
-}*/
-
-.container{
-  display: flex;
-}
-.column {
-  flex: 1;
-  margin: 60px;
-  padding: 10px;
-  border: 1px solid white;
-  align-self: stretch;
-}
-
-h2 *{
-  font-size: 50px;
-}
-
-
-
-
-/*
-.leftSection{
-    width: 25vw;
-    margin-left: 40px;
+  }
+  nav li{
+    margin: 10px 100px;;
+  }
+  nav a{
+    color: white;
+    text-decoration: none;
+    font-family: "Spectral", serif;
+    font-weight: 700;
+  }
+  .content{
+    text-decoration: none;
+    list-style: none;
+    position: fixed;
+    color: white;
+    padding: 4em;
+  }
+  .heading{
+    font-size: 4em;
+    max-width: 700px;
+    font-family: "Spectral", serif;
+    margin-top: 200px;
+    margin-bottom: 20px;
+  }
+  .smallText{
     display: flex;
-    justify-content:center;
     flex-direction: column;
-    font-family: "IBM Plex Sans Condensed", serif;
-
-}
-
-
-.breakfastLine{
-  background-color: white;
-  height: 2px;
-  bottom: 350px;
-  width: 90vw;
-}
-
-.verticalLine{
-    position: absolute;
-    background-color: white;
-    width: 3px;
-    top: 300px;
-    bottom: -500px;
-    left: 50%;
-    
-}
-
-.rightSection{
-  margin-right: 40px;
-  max-width: 25vw;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  font-family: "IBM Plex Sans Condensed", serif;
-  
-}
+    justify-content: center;
+    font-family: "Spectral", serif;
+    font-weight: 800;
+    max-width: 700px;
+    margin-bottom: 20px;
+  }
+  .button{
+    margin-left: 20px;
+    height: 50px;
+    width: 120px;
+    color: black;
+    font-weight: 800;
+    font-family: "Spectral", serif;
+  }
+  /*
+  .hero{
+    background-image: url("andy-li-RndRFJ1v1kk-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
+    width: 100vw;
+    top: 0;
+    position: relative;
+  }
+  .hero > .heading { 
+    font-size: 4rem;
+    color: #F3FFBD;
+    font-family: serif;
+    font-weight: bold;
+    background-image: linear-gradient(to right,
+    rgba(0,0,0,1),
+    rgba(0,0,0,.7),
+    rgba(0,0,0,.4),
+    rgba(0,0,0,0));
+    height: 100vh;
+    right: 0;
+    padding: 100px;
+    padding-top: 250px;
+    max-width: 750px;
+  }
