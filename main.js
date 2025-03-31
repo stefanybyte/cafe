@@ -1,3 +1,10 @@
-document.getElementById("menuLink").addEventListener("click", function() {
-    window.location.hrerf = "menu.html";
+
+
+const menuLink = document.getElementById('menuLink');
+
+menuLink.addEventListener("click", function(event){
+    event.preventDefault();
+    window.location.href = 'cafe menu/menu.html';
+ 
+
 });
